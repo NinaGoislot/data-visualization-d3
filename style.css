@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Lexend Deca;
+}
+
+html{
+    max-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    width: 70%;
+    margin: 50px 0 100px 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+h1{
+    max-width: 65%;
+}
+
+.logo{
+    height: 40px;
+}
+
+.alignement-carte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.alignement-carte svg {
+    align-items: center;
+}
+
+.alignement-losange{
+    position: absolute;
+    display: flex;
+    top: 60%;
+    left: 75%;
+}
+
+.alignement-selecteur{
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+    margin: 30px 0 30px 0;
+    width: 250px;
+}
+
+.selecteur-carte div{
+    width: 18px;
+    height: 18px;
+}
+
+.selecteur-carte{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    cursor: pointer;
+}
+
+.selecteur-carte.selected p{
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: .2s ease-in-out;
+}
+
+.global.selected div{
+    background-color: #054652;
+    transition: .2s ease-in-out;
+}
+
+.covoiturage.selected div{
+    background-color: #2CBDFF;
+    transition: .2s ease-in-out;
+}
+
+.pollution.selected div{
+    background-color: #9EF769;
+    transition: .2s ease-in-out;
+}
+
+.color-global{
+    border: 2px solid #054652;
+}
+
+.color-pollution{
+    border: 2px solid #9EF769;
+}
+
+.color-covoiturage{
+    border: 2px solid #2CBDFF;
+}
+
+.departement:hover{
+    opacity: 0.3;
+}
