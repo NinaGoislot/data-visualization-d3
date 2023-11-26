@@ -105,3 +105,9 @@ h1{
 .departement:hover{
     opacity: 0.3;
 }
+
+.infos {
+    text-align: center;
+    margin: 5rem;
+    font-style: italic;
+}
